@@ -1,0 +1,23 @@
+String常量	用双引号括起来的字符序列，是对象，所以有引用和实体
+
+	
+	String常量是对象，因此可以把String常量的引用赋值给一个String对象
+	
+	String s1,s2;
+	s1 = "你好";
+	s2 = "你好";
+	s1、s2、"你好"就有了相同的引用
+	
+
+
+String对象	
+	String s = new String("we are stufents");对象s中存放着引用；
+	
+	
+	称String对象封装的字符序列为String对象的实体
+	
+	
+	无法输出String对象的引用：System.out.pirntln(s);输出的是String对象的实体
+	
+	
+	int adress = System.identityHashCode(s)得到对象的引用

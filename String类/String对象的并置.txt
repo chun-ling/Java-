@@ -1,0 +1,11 @@
+String对象的并置	
+	"如果参与并置运算String对象只要有一个是变量，那么Java就会在动态区域存放所得到的新String对象的实体和引用
+如果是两个常量进行并置运算，那么得到的仍然是常量"
+	
+	
+	String testOne = "你" + "好";                    //testOne与"你好"的引用相同
+	
+	
+	String you = "你";
+	String hi = "好";
+	String testTwo = you + hi;                       //testTwo与"你好"的引用不同"

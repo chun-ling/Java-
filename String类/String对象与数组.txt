@@ -1,0 +1,18 @@
+String对象与字符数组	
+	s.getChar(11,15,a,0);//字符数组a转到字符串s中
+	c = s.toCharArray();//字符串s转字符数组c中
+
+	对于字符数组，System.out.println(c）和
+	for(int i = 0;i<c.length;i++){
+	   System.out.println(c[i]);
+	    }
+	是一致的
+
+
+
+String对象与字节数组	
+	构造方法String(byte[],int offset,int length)用指定的字节数组的一部分构造一个String对象//字节数组byte[]转为字符串
+	
+	public byte[] getBytes()方法//将当前String对象的字节序列存放到字节数组中，并返回数组的引用
+	byte []d = "java你好".getBytes();
+d[0]是'j'的编码，d[4]和d[5]存放的是'你'的编码"

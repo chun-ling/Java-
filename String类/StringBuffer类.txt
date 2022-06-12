@@ -1,0 +1,20 @@
+StringBuffer类	StringBuffer()          分配给该对象的实体的初始容量可以容纳16个字符
+	
+	StringBUffer对象可以通过length()方法获取实体中存放字符序列的长度，通过capacity()方法获取当前实体的实际容量
+	
+	StringBuffer str = new StringBuffer();
+
+
+	str.append("大家好");	将“大家好”追加到当前的字符序列中，并返回引用
+
+
+	str.setChartAt(0,'w')	将当前字符序列位置为0的字符用‘w'替换
+
+
+	str.insert(2," are all");	将” are all“插入到插入到位置为2的地方
+	
+	
+	str.replace(index,str.length,"right")	用”right“替换从index到str.length()-1的字符序列
+
+
+	str.delete(0,str.length());	删除从0到str.length()-1位置上的字符序列

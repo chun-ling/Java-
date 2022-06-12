@@ -1,0 +1,48 @@
+public boolean equals(String s)：	
+	String tom = "天道酬勤";
+	String boy = new String(""知心朋友"");
+	tom.equals(boy)的值为false,所比较的是字符序列，比较时忽略大小写
+	tom == boy的值也是false，所比较的是引用是否相同
+
+
+
+public int compareTo(String s)：
+	如果当前String对象的字符序列与s的相同，则返回零
+	如果当前String对象的字符序列大于s的字符序列，则返回正值
+	如果小于s的字符序列，则返回负值
+
+
+
+pubic boolean contains(String s)：
+	判断当前的String对象的字符序列是否包含参数s的字符序列，包含则返回true，不包含则返回false
+
+
+
+public int indexOf(String s)和public int lastIndexOf(String s)：
+	索引从零开始检索首次出现s字符序列的位置，并返回该位置。如果没有检索到，则返回-1；
+	索引从零开始检索最后出现s字符序列的位置，并返回该位置。如果没有检索到，则返回-1；"
+indexOf(String str,int startPoint)方法是一个重载方法，参数startPoint的值用来指定索引开始的位置
+
+
+
+public String substring(int startpoint)：
+	获得一个全新的String对象，新的String对象是复制当前String对象的字符序列中的startpoint到最后位置上的字符所得到的字符序列。
+substring(int start,int end)方法获得一个新的String对象，新的String对象是复制当前对象的start位置到end - 1位置上的字符所得到的字符序列
+
+
+
+public String trim()：
+	得到一个新的String对象，这个新的对象是当前对象去掉前后空格所得到的
+
+
+
+将String对象转换为基本型：	
+	String s = "876";
+	int x = Integer.parseInt(s);
+	double x = Double.parseDouble(s);"
+
+
+
+将基本数据类型转换为String对象：
+	String str = String.valueOf(1234.9876)
+String str = "" + 1234.9876

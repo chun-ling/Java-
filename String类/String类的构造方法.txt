@@ -1,0 +1,10 @@
+String类有两个常用的构造方法	
+	
+	
+	1.char a[] = {‘J','a','v','a'};
+  String s = new String(a);   等价于   String s = new String("Java");
+	
+	
+	
+	2.String(char a[],int startIndex,int count);
+字符数组，在a中提取字符的起始位置，从该位置截取字符的个数

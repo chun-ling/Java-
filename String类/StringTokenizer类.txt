@@ -1,0 +1,11 @@
+StringTokenizer类	不使用正则表达式做分隔标识
+	
+	StringTokenizer(String s,String delim)，
+	比如delim是"#*"，则#、*的任意排列皆可作为分隔标识
+	称一个StringTokenizer对象是一个字符序列分析器，分析器中封装的数据是若干个单词，分析器可以使用nextToken()方法逐个获取分析器中的单词
+
+
+	hasMoreTokens()方法	只要分析器中还有单词，就返回true
+
+
+	countTokens()方法	返回当前分析器中单词的个数
