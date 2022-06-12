@@ -1,0 +1,44 @@
+字符串格式化——String.format(  )的使用	
+	% [argument number] [falgs] [width] [.precision] type
+	举例：format("%,4.6d",42.000)
+				flags:,
+				width:4;最小宽度
+				.precision:保留的小数位
+
+
+转换符	
+	%s：字符串型       “charming”
+	%c：字符型           ‘c'
+	%d：整数型（十进制）99
+	%x：整数型（十六进制）FF
+	%o：整数型（八进制）77
+	%e：指数类型      3.14E+10
+	%%：百分比类型
+	%n：换行符
+	%tx：日期与时间类型（x代表不同的日期与时间转换符）
+
+
+转换符的标志（flags）	
+	-：左对齐
+	0：数字前补零
+	空格：数字前补空格
+	，：用千分位对数字分组
+	#：十六进制前补0x，八进制前补0
+	<：格式化前一个转换符所描述的参数
+
+
+日期的转换符
+	%A：星期x	
+	%tc：星期六 四月 16 09:53:34 CST 2022
+	%tF：2022-04-16
+	%tD：04/16/22
+	%tr：09:53:34 上午
+	%tT：09:53:34
+	%tR：09:54
+	
+	
+	
+	示例：
+			date = new date( );
+			System.out.println(String.format(""%tc"",date));
+			System.out.printf(""%tF"",date);"
